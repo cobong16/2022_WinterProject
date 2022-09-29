@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mapboxMap">
+
+    <fragment
+        android:id="@+id/googleMaps"
+        android:name="com.cwnu.wevigation.fragment.googleMaps.GoogleMapsFragment"
+        android:label="@string/googlemaps"
+        tools:layout="@layout/fragment_googlemaps" />
+
+    <fragment
+        android:id="@+id/mapboxMap"
+        android:name="com.cwnu.wevigation.fragment.mapbox.MapboxFragment"
+        android:label="@string/mapboxmap"
+        tools:layout="@layout/fragment_mapbox" />
+
+    <fragment
+        android:id="@+id/tellBlackIce"
+        android:name="com.cwnu.wevigation.fragment.blackice.BlackIceFragment"
+        android:label="@string/blackice"
+        tools:layout="@layout/fragment_blackice" />
+
+    <dialog
+        android:id="@+id/maker"
+        android:name="com.cwnu.wevigation.fragment.maker.MakerFragment"
+        android:label="@string/maker"
+        tools:layout="@layout/fragment_maker" />
+
+    <dialog
+        android:id="@+id/info"
+        android:name="com.cwnu.wevigation.fragment.info.InfoFragment"
+        android:label="@string/info"
+        tools:layout="@layout/fragment_info" />
+
+    <dialog
+        android:id="@+id/exit"
+        android:name="com.cwnu.wevigation.fragment.exit.ExitFragment"
+        android:label="@string/exit"
+        tools:layout="@layout/fragment_exit" />
+
+
+</navigation>

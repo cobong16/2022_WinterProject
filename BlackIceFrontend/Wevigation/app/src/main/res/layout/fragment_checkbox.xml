@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/checkbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.googleMaps.CheckBoxFragment">
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="310dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="분류"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/dang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:layout_marginStart="15dp"
+
+            android:text="위험도" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정상"
+                android:layout_margin="20dp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위험"
+                android:layout_margin="20dp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="매우위험"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강수량"
+            android:layout_marginTop="165dp"
+            android:layout_marginStart="15dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="160dp">
+            <CheckBox
+                android:id="@+id/checkbox_rain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="있음"
+                android:layout_margin="20dp"/>
+            <CheckBox
+                android:id="@+id/checkbox_rain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="없음"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="확인"/>
+    </FrameLayout>
+</layout>

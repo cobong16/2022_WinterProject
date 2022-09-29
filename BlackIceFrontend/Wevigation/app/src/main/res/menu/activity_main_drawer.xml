@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_action"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/mapboxMap"
+            android:icon="@drawable/ic_menu_mapbox"
+            android:title="@string/mapboxmap" />
+
+        <item
+            android:id="@+id/googleMaps"
+            android:icon="@drawable/ic_menu_googlemaps"
+            android:title="@string/googlemaps" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_blackice"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/tellBlackIce"
+            android:icon="@drawable/ic_menu_blackice"
+            android:title="@string/blackice"
+            />
+
+        <item
+            android:id="@+id/maker"
+            android:icon="@drawable/ic_menu_maker"
+            android:title="@string/maker"
+            />
+
+        <item
+            android:id="@+id/info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="@string/info"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_etc"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/ic_menu_exit"
+            android:title="@string/exit"
+            />
+    </group>
+
+</menu>
